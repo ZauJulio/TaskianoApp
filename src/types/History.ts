@@ -1,0 +1,23 @@
+interface Weekdays {
+  [x: string]: number
+  mon: number
+  tue: number
+  wed: number
+  thu: number
+  fri: number
+  sat: number
+  sun: number
+}
+
+interface IHistory {
+  id?: string
+  score: number
+  updated_at?: string | Date
+  weekdayTaskCount: Weekdays
+  lastTaskNumber?: number
+
+  userId: string
+}
+
+export { Weekdays }
+export default IHistory
